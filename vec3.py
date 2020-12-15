@@ -1,4 +1,4 @@
-import math
+from math import sqrt
 
 class Vec3(object):
     def __init__(self, x:float=0.0, y:float=0.0, z:float=0.0):
@@ -75,4 +75,4 @@ def cross(lhs, rhs):
     return lhs.cross(rhs)
 
 def norm2(v):
-    return math.sqrt(v.x*v.x + v.y*v.y + v.z*v.z)
+    return sqrt(v.x*v.x + v.y*v.y + v.z*v.z)

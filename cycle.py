@@ -27,7 +27,8 @@ class Cycle():
         self.theta = theta
 
     @staticmethod
-    def calc_O(F, B, theta):
+    def calc_O(F:Vec3, B:Vec3, theta:float):
+        """calculate the point of intersection of axes of wheels F and B"""
         if F == B:
             raise ValueError('F cannot be equal to B')
         if theta == 0.0:
